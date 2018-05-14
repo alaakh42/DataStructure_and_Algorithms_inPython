@@ -1,4 +1,5 @@
-class SwquenceIterator:
+class SequenceIterator:
+	
 	"""An iterator for any of Python's sequence types"""
 
 	def __init__(self, sequence):
@@ -16,8 +17,8 @@ class SwquenceIterator:
 		"""By convention, an iterator must return itself as an iterator."""
 		return self
 
-from timeit import Timer
 
+from timeit import Timer
 def example1(S):
 	"""Return the sum of the elements with even index in sequence S."""
 	n = len(S)
